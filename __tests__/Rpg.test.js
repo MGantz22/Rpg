@@ -1,0 +1,1 @@
+import Rpg from './../src/Rpg.js';
