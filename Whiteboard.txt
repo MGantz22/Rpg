@@ -1,0 +1,78 @@
+Objectives:
+Logic could include the following:
+
+    Character creation: Use ES6 classes to generate different character types. Be creative with your character types — use warriors, wizards, scientists, prom queen, whatever! Characters should have specific attributes. For instance, in a medieval RPG, characters might have strength and intelligence attributes among others. In an '80's high school RPG, characters might have snark and charm.
+
+    Battle system: Many RPGs have a battle system so characters can fight monsters, though that could just as easily be a high school 'battle' system where the prom queen has a dance-off with the theater aficionado. Determine conditions for winning a battle, whether that's defeating monsters (with swords and spells doing damage), accumulating dance-off style points, or any other system you think of.
+
+    Level up: Determine a leveling system. Characters should be able to go from Level 1 to Level 2 and so on. Generally each level comes with new abilities. How do characters level up in your game? What attributes and powers do they gain? Does their strength go up or do they learn new spells?
+
+    Inventory: Characters should be able to have items that enhance their abilities. Maybe the Magic Armor increases their defense power or legwarmers increase their dance-off ability. Create a limit to the number of items a character can have. Characters should be able to add, drop, buy and sell items.
+
+The goal is to use class syntax and TDD to create well-tested business logic. You are not expected to have a functioning game in the browser. Instead, focus on testing and business logic!
+
+Character types:
+Melee - Tank
+Primary Attributes: Strength, Constitution
+Starting Stats: Strgth - 10 Con - 10 Int - 5 Dex - 5 Spi - 5
+Damage Dealing: 8 dmg pts
+
+DPS - Rogue
+Primary Attributes: Dexterity, Constitution
+Starting Stats: Strgth - 5 Con - 10 Int - 5 Dex - 10 Spi - 5
+Damage Dealing: 5 dmg pts
+
+Ranged - Wizard
+Primary Attributes: Intelligence, Dexterity
+Starting Stats: Strngth - 5 Con - 6 Int - 10 Dex - 10 Spi - 6
+Damage Dealing: 3 dmg pts
+
+Healer - Druid
+Primary Attributes: Intelligence, Spirit
+Starting Statss: Strngth - 5 Con - 6 Int - 10 Dex - 6 Spi - 10
+Damage Dealing: 2 dmg pts
+Healing: 4 healing pts
+
+Battle System: Damage accumulation (d6 system)
+Hit Points - health 
+Damage Points - damage done
+What happens when hits 0 - Death
+Healing Points - How many points do you regenerate
+
+Leveling System:
+formula = (level * 100 * 1.25) 
+Add to stat at each level
+
+Inventory System:
+Item: Backpack/Bag
+Allows characters to hold 10 individual items
+
+Item 2: Potion
+Restores +4 health
+
+Item 3: Armor
+Adds +2 Constitution/Strenth to character
+
+Item 3: Wizard Staff
+Adds +2 to damage
+
+Item 4: Druid Pouch
++4 healing when you fling dirt from this pouch at another character
+
+
+Code Brainstorm:
+
+Character.js
+Input character name
+Select character type
+Starting Attributes
+Starting health
+Level up system to distribute points
+  - Import battle results into lvls
+  
+Battle-Sys.js
+
+
+Inventory.js
+
+Import into index.js
